@@ -18,8 +18,8 @@ INSTALL_REQUIRES = [
 
 # Installation operation
 setup(
-    name="ext_template",
-    packages=["ext_template"],
+    name="leggedrobot_lab",
+    packages=["leggedrobot_lab"],
     author=EXTENSION_TOML_DATA["package"]["author"],
     maintainer=EXTENSION_TOML_DATA["package"]["maintainer"],
     url=EXTENSION_TOML_DATA["package"]["repository"],
@@ -35,6 +35,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Isaac Sim :: 2023.1.1",
         "Isaac Sim :: 4.0.0",
+        "Isaac Sim :: 4.1.0",
     ],
     zip_safe=False,
 )
