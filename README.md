@@ -28,7 +28,7 @@ Unitree Go2 Flat
 # Train
 python scripts/rsl_rl/train.py --task Isaac-Velocity-Flat-Unitree-Go2-v0 --headless
 # Play
-python scripts/rsl_rl/play.py --task Isaac-Velocity-Flat-Unitree-Go2-v0
+python scripts/rsl_rl/play.py --task Isaac-Velocity-Flat-Unitree-Go2-Play-v0
 ```
 
 Unitree Go2 Rough
@@ -37,7 +37,7 @@ Unitree Go2 Rough
 # Train
 python scripts/rsl_rl/train.py --task Isaac-Velocity-Rough-Unitree-Go2-v0 --headless
 # Play
-python scripts/rsl_rl/play.py --task Isaac-Velocity-Rough-Unitree-Go2-v0
+python scripts/rsl_rl/play.py --task Isaac-Velocity-Rough-Unitree-Go2-Play-v0
 ```
 
 
