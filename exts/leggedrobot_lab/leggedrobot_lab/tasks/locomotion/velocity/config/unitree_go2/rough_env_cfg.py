@@ -22,6 +22,14 @@ class UnitreeGo2RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
         self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_range = (0.01, 0.06)
         self.scene.terrain.terrain_generator.sub_terrains["random_rough"].noise_step = 0.01
 
+        # ------------------------------Observations------------------------------
+        # self.observations.policy.base_lin_vel.scale = 2.0
+        # self.observations.policy.base_ang_vel.scale = 0.25
+        # self.observations.policy.joint_pos.scale = 1.0
+        # self.observations.policy.joint_vel.scale = 0.05
+        # self.observations.policy.base_lin_vel = None
+        # self.observations.policy.height_scan = None
+
         # ------------------------------Actions------------------------------
         # reduce action scale
         self.actions.joint_pos.scale = 0.25
@@ -57,7 +65,7 @@ class UnitreeGo2RoughEnvCfg(LocomotionVelocityRoughEnvCfg):
         self.rewards.ang_vel_xy_l2.weight = -0.05        #在XY平面上的角速度惩罚
         self.rewards.flat_orientation_l2.weight = -0.5   #保持水平
         self.rewards.base_height_l2.weight = 0           #base的高度，不使用
-        self.rewards.base_height_l2.params["target_height"] = 0.35  #base目标高度
+        self.rewards.base_height_l2.params["target_height"] = 0.25  #base目标高度
         self.rewards.base_height_l2.params["asset_cfg"].body_names = ["base"]
         self.rewards.body_lin_acc_l2.weight = 0         #线加速度，不使用
         self.rewards.body_lin_acc_l2.params["asset_cfg"].body_names = ["base"]  #base的线加速度

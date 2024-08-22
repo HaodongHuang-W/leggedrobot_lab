@@ -16,7 +16,6 @@ gym.register(
     },
 )
 
-
 gym.register(
     id="Isaac-Velocity-Rough-Unitree-Go2-v0",
     entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",

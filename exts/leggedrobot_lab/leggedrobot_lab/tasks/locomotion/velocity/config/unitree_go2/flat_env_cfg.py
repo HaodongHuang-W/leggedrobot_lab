@@ -1,11 +1,11 @@
 from omni.isaac.lab.utils import configclass
 
-from .rough_env_cfg import UnitreeA1RoughEnvCfg
+from .rough_env_cfg import UnitreeGo2RoughEnvCfg
 
 
 
 @configclass
-class UnitreeA1FlatEnvCfg(UnitreeA1RoughEnvCfg):
+class UnitreeGo2FlatEnvCfg(UnitreeGo2RoughEnvCfg):
     def __post_init__(self):
         # Temporarily not run disable_zerow_eight_rewards() in parent class to override rewards
         self._run_disable_zero_weight_rewards = False    ## 暂时不在父类中运行disable_zerow_eight_rewards()方法，以便重写奖励
@@ -15,6 +15,7 @@ class UnitreeA1FlatEnvCfg(UnitreeA1RoughEnvCfg):
         # override rewards     重写奖励参数
         self.rewards.flat_orientation_l2.weight = -2.5   #偏离水平姿态的惩罚，变得更大
         self.rewards.feet_air_time.weight = 0.25         #脚在空中的时间奖励。正权重表明希望鼓励跳跃或步态轻快
+        
         self.rewards.base_height_l2.weight = -2          #机器人基座高度的惩罚
         self.rewards.base_height_rough_l2.weight = 0     #粗糙地面为0
         # change terrain to flat
