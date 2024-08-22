@@ -3,8 +3,8 @@
 leggedrobot_lab is an extension project based on the IsaacLab framework. 
 
 TODO:
-- [ ] Unitree G1 Training
-- [ ] Unitree Go2 Training
+- [x] Unitree G1 Training
+- [x] Unitree Go2 Training
 
 
 
