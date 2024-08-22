@@ -41,18 +41,6 @@ python scripts/rsl_rl/play.py --task Isaac-Velocity-Rough-Unitree-Go2-v0
 ```
 
 
-## Citation
-
-Please cite the following if you use this code or parts of it:
-
-```
-@software{fan-ziqi2024robot_lab,
-  author = {fan-ziqi},
-  title = {{robot_lab: An extension project based on the IsaacLab framework.}},
-  url = {https://github.com/fan-ziqi/robot_lab},
-  year = {2024}
-}
-```
 
 ## Code Contribution
 The code was written with reference to [fan-ziqi](https://github.com/fan-ziqi/robot_lab).I would also like to thank [Jiaming Hu](https://jih189.github.io/isaaclab_project) for his guidance on the code.
