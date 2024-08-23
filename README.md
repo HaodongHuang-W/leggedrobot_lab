@@ -40,6 +40,23 @@ python scripts/rsl_rl/train.py --task Isaac-Velocity-Rough-Unitree-Go2-v0 --head
 python scripts/rsl_rl/play.py --task Isaac-Velocity-Rough-Unitree-Go2-Play-v0
 ```
 
+Unitree G1 Flat
+
+```bash
+# Train
+python scripts/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --headless
+# Play
+python scripts/rsl_rl/play.py --task Isaac-Velocity-Flat-G1-Play-v0
+```
+Unitree G1 Rough
+```bash
+# Train
+python scripts/rsl_rl/train.py --task Isaac-Velocity-Rough-G1-v0 --headless
+# Play
+python scripts/rsl_rl/play.py --task Isaac-Velocity-Rough-G1-Play-v0
+```
+
+
 
 
 ## Code Contribution
